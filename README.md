@@ -1,6 +1,6 @@
-# akamaiapi
+# akamaisdk
 
-**akamaiapi** is a lightweight Python SDK for interacting with [Akamai APIs](https://developer.akamai.com/) using EdgeGrid authentication.
+**akamaisdk** is a lightweight Python SDK for interacting with [Akamai APIs](https://developer.akamai.com/) using EdgeGrid authentication.
 
 ## ✨ Features
 - ✅ HMAC-signed Akamai EdgeGrid authentication via `EdgeAuth`
@@ -9,18 +9,18 @@
 
 ## 📦 Installation
 ```bash
-pip install akamaiapi
+pip install akamaisdk
 ```
 
 ## 🔧 Setup
 ```python
-from akamaiapi import EdgeAuth, get_policies
+from akamaisdk import EdgeAuth, get_policies
 
 auth = EdgeAuth(
     client_token="YOUR_CLIENT_TOKEN",
     client_secret="YOUR_CLIENT_SECRET",
     access_token="YOUR_ACCESS_TOKEN",
-    base_url="https://akab-xxxx.luna.akamaiapis.net"
+    base_url="https://akab-xxxx.luna.akamaisdks.net"
 )
 ```
 
@@ -43,7 +43,7 @@ print(policy)
 ## 🧱 SDK Architecture
 
 ```text
-akamaiapi/
+akamaisdk/
 ├── __init__.py         # Exports core classes/functions
 ├── edgeauth.py         # EdgeGrid authentication logic
 ├── appsec.py           # App & API Protector endpoints
